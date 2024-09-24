@@ -1,0 +1,226 @@
+.label{
+    
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    -fx-color: rgb(60, 195, 100);
+    
+}
+
+.list-view {
+    -fx-font-family: "Times new Roman", Georgia, Serif;
+    -fx-font-size: 10pt;
+    -fx-alignment: center;
+    
+    
+}
+.button.geral {
+    -fx-font-family: "Times new Roman", Georgia, Serif;
+    -fx-font-size: 12pt;
+    -fx-background-color: rgb(60, 195, 100);
+    -fx-border-color: rgb(60, 195, 100);
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+
+/*.button:hover{
+//-fx-background-color: white;
+//-fx-text-fill: black;
+//}*/
+
+#comboBoxAlgoritmos {
+    -shrink-animate-on-press: true;
+    -fx-background-color: rgb(40, 150, 191);
+    -fx-color: rgb(0,0,0);
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    
+}
+.button.vertice {
+    
+    -fx-border-color: rgb(0, 0,0);
+    -fx-background-color: rgb(255,255,255);
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    /*-fx-pref-height:28px;  
+    -fx-pref-width:114px;*/
+}
+
+.label.algoritmosDescr {
+
+    -fx-border-color: rgb(255,255,255);
+    -fx-background-color: rgb(255,255,255);
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+/*    -fx-text-alignment: left;*/
+}
+
+.button.play {
+    -fx-background-image: url("Play_1.png");
+    -fx-border-color: rgb(255,255,255);
+    /*-fx-pref-height:28px;  
+    -fx-pref-width:114px;*/
+}
+.button.pause {
+    -fx-background-image: url("pause_3.jpg");
+    -fx-border-color: rgb(255,255,255);
+    /*-fx-pref-height:28px;  
+    -fx-pref-width:114px;*/
+}
+.button.acelerar {
+    -fx-background-image: url("acelerar_1.png");
+    -fx-border-color: rgb(255,255,255);
+    /*-fx-pref-height:28px;  
+    -fx-pref-width:114px;*/
+}
+.button.desacelerar {
+    -fx-background-image: url("desacelerar_1.png");
+    -fx-border-color: rgb(255,255,255);
+    /*-fx-pref-height:28px;  
+    -fx-pref-width:114px;*/
+}
+.button.voltar {
+    -fx-background-image: url("voltar_1.png");
+    -fx-border-color: rgb(255,255,255);
+    -fx-pref-height:39px;  
+    -fx-pref-width:41px;
+}
+
+.button.toggle-button {
+ 
+    -shrink-animate-on-press: true;
+    -fx-background-color: rgb(40, 150, 191);
+    -fx-color: rgb(0,0,0);
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+}
+
+
+
+.text-field{
+    -fx-background-color: rgb(60, 195, 100);
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-color: rgb(0,0,0);
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
+
+.table-view{
+    -fx-font-family: "Times new Roman", Georgia, Serif;
+    -fx-font-size: 11pt;
+}
+
+.table-view .column-header.coluna-v .label{ /* Coluna Valor*/
+   -fx-alignment: center;
+   
+}
+
+.table-view .column-header.coluna-marcado .label{ /* Coluna Data*/
+   -fx-alignment: center;
+}
+
+.table-view .column-header.coluna-aresta .label{ /* Coluna Data*/
+   -fx-alignment: center;
+}
+
+.table-view .table-cell.coluna-v { /* Célula da coluna Valor*/
+   -fx-alignment: center;
+}
+
+.table-view .table-cell.coluna-marcado { /* Célula da coluna Data */ 
+   -fx-alignment: center;
+}
+
+.table-view .table-cell.coluna-aresta { /* Célula da coluna Data */ 
+   -fx-alignment: center;
+}
+
+
+
+.table-view .column-header.coluna-v .label{ /* Coluna Valor*/
+   -fx-alignment: center;
+   
+}
+
+.table-view .column-header.coluna-marcado .label{ /* Coluna Data*/
+   -fx-alignment: center;
+}
+
+.table-view .column-header.coluna-arestaPara .label{ /* Coluna Data*/
+   -fx-alignment: center;
+}
+
+.table-view .column-header.coluna-distanciaPara .label{ /* Coluna Data*/
+   -fx-alignment: center;
+}
+
+
+.table-view .table-cell.coluna-v { /* Célula da coluna Valor*/
+   -fx-alignment: center;
+}
+
+.table-view .table-cell.coluna-marcado { /* Célula da coluna Data */ 
+   -fx-alignment: center;
+}
+
+.table-view .table-cell.coluna-arestaPara { /* Célula da coluna Data */ 
+   -fx-alignment: center;
+}
+
+.table-view .table-cell.coluna-distanciaPara { /* Célula da coluna Data */ 
+   -fx-alignment: center;
+}
+
+
+
+#listViewpilhaDeExecucao .list-cell {
+    -fx-alignment: center;
+    /*-fx-border-width: 1;*/
+    /*-fx-border-color: #000000;*/
+}
+
+#filaView .list-cell {
+    -fx-alignment: center;
+    /*-fx-border-width: 1;*/
+    /*-fx-border-color: #000000;*/
+}
+
+#comboBoxAlgoritmos .combo-Box-cell {
+    -fx-alignment: center;
+}
+
+#TextFieldVerticeOrigem {
+    
+    -fx-background-color: rgb(40, 150, 191);
+    -fx-text-inner-color: rgb(0,0,0);
+    -fx-prompt-text-fill: rgb(0,0,0);
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+}
+
+#TextFieldVerticeDestino {
+    
+    -fx-background-color: rgb(40, 150, 191);
+    -fx-text-inner-color: rgb(0,0,0);
+    -fx-prompt-text-fill: rgb(0,0,0);
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+}
+
+
+.root {
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #ffffff;
+}
+
+.header-section {
+    -fx-padding: 10px;
+    -fx-font-size: 20px;
+    -fx-background-color: teal;
+}
+
+
+
+

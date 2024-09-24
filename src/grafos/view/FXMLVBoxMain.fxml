@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="660.0" prefWidth="1115.0" stylesheets="@grafo.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grafos.controller.FXMLVBoxMainController">
+      <children>
+      <Button fx:id="buttonAjudaBuscaGrafo" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="88.0" maxHeight="64.0" maxWidth="40.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#handleButtonAjudaBuscaGrafo" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #ffffff;" text="?" textAlignment="CENTER" textFill="#2896bf">
+         <font>
+            <Font name="Sitka Small" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="14.0" layoutY="14.0" text="EasyGrafos - 2.0" textFill="#01170e">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutY="46.0" prefHeight="4.0" prefWidth="1115.0" />
+            <ComboBox fx:id="comboBoxAlgoritmos" layoutX="10.0" layoutY="138.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleButtonCarregarCodigo" prefHeight="33.0" prefWidth="222.0" promptText="Selecionar Algoritmo" styleClass="toggle-button">
+         <cursor>
+            
+         </cursor></ComboBox>
+            <Button fx:id="buttonIniciar" layoutX="10.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleButtonIniciar" prefHeight="36.0" prefWidth="222.0" styleClass="toggle-button" text="Confirmar" AnchorPane.leftAnchor="10.0">
+         <cursor>
+            
+         </cursor></Button>
+            <TextField fx:id="TextFieldVerticeOrigem" alignment="CENTER" layoutX="10.0" layoutY="187.0" prefHeight="41.0" prefWidth="222.0" promptText="Vértice de origem" text="Vértice de origem">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+            <ListView fx:id="listViewCodigo" layoutX="732.0" layoutY="87.0" prefHeight="543.0" prefWidth="369.0" stylesheets="@grafo.css" />
+            <TextField fx:id="TextFieldVerticeDestino" alignment="CENTER" layoutX="10.0" layoutY="245.0" prefHeight="39.0" prefWidth="222.0" promptText="Vértice de destino" text="Vértice de destino" />
+            <Label layoutX="506.0" layoutY="14.0" text="Configuração">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            
+            <Button fx:id="buttonBuscarGrafo" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleButtonBuscarGrafo" prefHeight="36.0" prefWidth="222.0" styleClass="toggle-button" text="Buscar Grafo" textFill="WHITE">
+         <cursor>
+            
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <AnchorPane fx:id="anchorPaneGrafo" layoutX="282.0" layoutY="87.0" prefHeight="390.0" prefWidth="440.0" AnchorPane.rightAnchor="393.0">
+         <cursor>
+            
+         </cursor>
+      </AnchorPane>
+      <Button fx:id="buttonSobre" alignment="CENTER" contentDisplay="CENTER" layoutX="1081.0" layoutY="14.0" maxHeight="10.0" maxWidth="10.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#handleButtonSobre" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: #2896bf;" text="i" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Impact" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea fx:id="textAreaAlgoritmoDescr" editable="false" layoutX="8.0" layoutY="477.0" prefHeight="154.0" prefWidth="712.0" styleClass="algoritmosDescr" visible="false" />
+         </children>
+
+      </AnchorPane>

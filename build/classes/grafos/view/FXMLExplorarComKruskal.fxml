@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="660.0" prefWidth="1115.0" stylesheets="@grafo.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grafos.controller.FXMLExplorarComKruskalController">
+   <children>
+      <AnchorPane fx:id="anchorPaneGrafo" layoutX="363.0" layoutY="47.0" prefHeight="274.0" prefWidth="405.0" />
+      <ListView fx:id="listaViewADJ" layoutX="420.0" layoutY="374.0" prefHeight="244.0" prefWidth="321.0" />
+      <Button fx:id="parar" layoutX="973.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleButtonPause" prefHeight="40.0" prefWidth="37.0" styleClass="pause">
+         <cursor>
+            
+         </cursor></Button>
+      <Button fx:id="desacelerar" layoutX="849.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleButtonDesacelerar" prefHeight="39.0" prefWidth="38.0" styleClass="acelerar">
+         <cursor>
+            
+         </cursor></Button>
+      <Button fx:id="acelerar" layoutX="1036.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleButtonAcelerar" prefHeight="40.0" prefWidth="39.0" styleClass="desacelerar">
+         <cursor>
+            
+         </cursor></Button>
+      <Separator layoutY="22.0" prefHeight="1.0" prefWidth="1115.0" />
+      <Label layoutX="23.0" layoutY="2.0" text="EasyGrafos - 2.0" />
+      <Label layoutX="512.0" layoutY="4.0" text="Execução">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="27.0" text="Execução do Algoritmo de Kruskal" />
+      <Label layoutX="94.0" layoutY="27.0" text="Código Fonte" />
+      <Button fx:id="voltar" layoutX="941.0" layoutY="600.0" maxHeight="36.0" maxWidth="35.0" mnemonicParsing="false" onAction="#handleButtonVoltar" prefHeight="41.0" prefWidth="40.0" styleClass="voltar">
+         <cursor>
+            
+         </cursor></Button>
+      <Label layoutX="861.0" layoutY="27.0" text="Atributos do algoritmo " />
+      <GridPane fx:id="codigoGrid" layoutX="-133.0" layoutY="52.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="498.0" style="-fx-font-size: 12;" stylesheets="@grafo.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="501.0" layoutY="345.0" text="Lista de Adjacências" />
+      <Button fx:id="play" layoutX="909.0" layoutY="550.0" maxHeight="40.0" maxWidth="43.0" mnemonicParsing="false" onAction="#handleButtonPlay" prefHeight="40.0" prefWidth="38.0" styleClass="play">
+         <cursor>
+            
+         </cursor></Button>
+      <Button fx:id="variaveis" layoutX="838.0" layoutY="453.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="249.0" styleClass="vertice" text="Variáveis" />
+      <TableView fx:id="tableViewMST" editable="true" layoutX="832.0" layoutY="82.0" prefHeight="334.0" prefWidth="93.0" stylesheets="@grafo.css">
+        <columns>
+          <TableColumn fx:id="tableColumnMSTAresta" prefWidth="93.0" styleClass="coluna-aresta" text="aresta" />
+        </columns>
+      </TableView>
+      <Label layoutX="879.0" layoutY="433.0" text="Variáveis Importantes" />
+      <TableView fx:id="tableViewPQ" layoutX="937.0" layoutY="82.0" prefHeight="334.0" prefWidth="151.0">
+        <columns>
+          <TableColumn fx:id="tableColumnPQAresta" prefWidth="75.0" text="aresta" />
+          <TableColumn fx:id="tableColumnPQPeso" prefWidth="75.0" text="peso" />
+        </columns>
+      </TableView>
+      <Label layoutX="1000.0" layoutY="58.0" text="PQ" />
+      <Label layoutX="862.0" layoutY="58.0" text="MST" />
+   </children>
+</AnchorPane>

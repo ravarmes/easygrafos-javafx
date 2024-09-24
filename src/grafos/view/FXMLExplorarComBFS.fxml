@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="620.0" prefWidth="1046.0" stylesheets="@grafo.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grafos.controller.FXMLExplorarComBFSController">
+   <children>
+      <AnchorPane fx:id="anchorPaneGrafo" layoutX="311.0" layoutY="47.0" prefHeight="258.0" prefWidth="431.0" />
+      <ListView fx:id="listaViewADJ" layoutX="389.0" layoutY="415.0" prefHeight="229.0" prefWidth="200.0" />
+      <Button fx:id="parar" layoutX="910.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleButtonPause" prefHeight="40.0" prefWidth="37.0" styleClass="pause">
+         <cursor>
+            
+         </cursor></Button>
+      <Button fx:id="desacelerar" layoutX="786.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleButtonDesacelerar" prefHeight="39.0" prefWidth="38.0" styleClass="acelerar">
+         <cursor>
+            
+         </cursor></Button>
+      <Button fx:id="acelerar" layoutX="973.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleButtonAcelerar" prefHeight="40.0" prefWidth="39.0" styleClass="desacelerar">
+         <cursor>
+            
+         </cursor></Button>
+      <Separator layoutX="14.0" layoutY="22.0" prefHeight="5.0" prefWidth="993.0" />
+      <Label layoutX="23.0" layoutY="2.0" text="EasyGrafos - 1.0" />
+      <Label layoutX="478.0" layoutY="2.0" text="Execução">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="27.0" text="Execução do Algoritmo Busca em Largura (BFS)" />
+      <Label layoutX="94.0" layoutY="27.0" text="Código Fonte" />
+      <Button fx:id="voltar" layoutX="878.0" layoutY="585.0" maxHeight="36.0" maxWidth="35.0" mnemonicParsing="false" onAction="#handleButtonVoltar" prefHeight="41.0" prefWidth="40.0" styleClass="voltar">
+         <cursor>
+            
+         </cursor></Button>
+      <Label layoutX="812.0" layoutY="27.0" text="Atributos do algoritmo " />
+      <GridPane fx:id="codigoGrid" layoutX="-135.0" layoutY="52.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="453.0" style="-fx-font-size: 12;" stylesheets="@grafo.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="13.0" prefHeight="25.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="410.0" layoutY="395.0" text="Lista de Adjacências" />
+      <Label layoutX="634.0" layoutY="395.0" text="Fila" />
+      <ListView fx:id="filaView" layoutX="613.0" layoutY="415.0" prefHeight="229.0" prefWidth="70.0" />
+      <Button fx:id="play" layoutX="846.0" layoutY="530.0" maxHeight="40.0" maxWidth="43.0" mnemonicParsing="false" onAction="#handleButtonPlay" prefHeight="40.0" prefWidth="38.0" styleClass="play">
+         <cursor>
+            
+         </cursor></Button>
+      <Button fx:id="VerticeExplorando" layoutX="375.0" layoutY="348.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="321.0" styleClass="vertice" text="Vertice explorando" />
+      <Button fx:id="variaveis" layoutX="770.0" layoutY="430.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="262.0" styleClass="vertice" text="Variáveis" />
+      <TableView fx:id="tableViewPropriedades" editable="true" layoutX="753.0" layoutY="46.0" prefHeight="293.0" prefWidth="296.0" stylesheets="@grafo.css">
+        <columns>
+          <TableColumn fx:id="v" prefWidth="25.0" styleClass="coluna-aresta" text="v" />
+            <TableColumn fx:id="marcado" minWidth="0.0" prefWidth="89.0" styleClass="coluna-aresta" text="marcado[v]" />
+          <TableColumn fx:id="arestaPara" prefWidth="100.0" styleClass="coluna-aresta" text="arestaPara[v]" />
+            <TableColumn fx:id="distanciaPara" prefWidth="84.0" styleClass="coluna-aresta" text="distPara[v]" />
+        </columns>
+      </TableView>
+      <Label layoutX="838.0" layoutY="395.0" text="Variáveis Locais" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="317.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grafos.controller.FXMLSobreController">
+   <children>
+      <ImageView fitHeight="138.0" fitWidth="267.0" layoutX="25.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="25.0">
+         <image>
+            <Image url="@easyGrafosLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="161.0" prefHeight="91.0" prefWidth="267.0" text="Software Educacional desenvolvido como projeto de Trabalho de Conclusão de Curso (TCC) para o  curso de Sistemas de Informação do IFES campus de Cachoeiro de Itapemirim. Com orientação do professor: DSc Rafael Vargas Mesquita dos Santos." textAlignment="JUSTIFY" wrapText="true" />
+      <Label layoutX="25.0" layoutY="335.0" prefHeight="85.0" prefWidth="267.0" text="EasyGrafos 2.0 - Com telas para resolução do problema da Árvore Geradora Mínima com o  algoritmo de Prim em suas duas versões: Eager e Lazy. Desenvolvido por Danielle Rangel Garcia em 2022." textAlignment="JUSTIFY" wrapText="true" />
+      <Label layoutX="25.0" layoutY="255.0" prefHeight="20.0" prefWidth="267.0" text="Versões:" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="275.0" prefHeight="54.0" prefWidth="267.0" text="EasyGrafos 1.0 - Com as telas dos algoritmos de BFS e DFS. Desenvolvido por Jonathas Gonçalves Picoli em 2018." textAlignment="JUSTIFY" wrapText="true" />
+      <Group layoutX="42.0" layoutY="432.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="41.0">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="28.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@LogotipoIF.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="-2.0" prefHeight="20.0" prefWidth="143.0" text="INSTITUTO FEDERAL " textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="8.0" prefHeight="20.0" prefWidth="78.0" text="Espírito Santo" textAlignment="JUSTIFY" />
+            <Label layoutX="32.0" layoutY="19.0" prefHeight="20.0" prefWidth="201.0" text="Campus Cachoeiro de Itapemirim" textAlignment="JUSTIFY" />
+         </children>
+      </Group>
+      <Label layoutX="6.0" layoutY="492.0" prefHeight="20.0" prefWidth="130.0" text="EasyGrafos 2017 - 2022" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="4.0" />
+      <Button fx:id="buttonVoltar" alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="487.0" minHeight="25.0" minWidth="15.0" mnemonicParsing="false" onAction="#handleButtonFechar" prefHeight="10.0" prefWidth="56.0" style="-fx-background-color: #2896bf;" text="Fechar" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
