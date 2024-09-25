@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="RVM" src="https://github.com/ravarmes/javafx-introducao/blob/main/assets/logo.jpg" />
+    <img alt="RVM" src="https://github.com/ravarmes/easygrafos-javafx/blob/main/assets/logo.jpg" />
 </h1>
 
 <h3 align="center">
@@ -25,7 +25,6 @@
 <p align="center">
   <a href="#-instalacao">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-telas">Telas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-links">Links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licenca">Licença</a>
 </p>
 
@@ -37,7 +36,7 @@
 
 ## :clapper: Tela(s) <a name="-telas"/></a>
 
-![Tela](https://github.com/ravarmes/javafx-introducao/blob/main/assets/abstract_movie.gif)
+![Tela](https://github.com/ravarmes/easygrafos-javafx/blob/main/assets/abstract_movie.gif)
 
 ## :memo: Licença <a name="-licenca"/></a>
 
